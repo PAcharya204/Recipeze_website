@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(240, 189, 189);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    max-height: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+}
+
+nav a {
+    background: transparent;
+    color: deeppink;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+aside a {
+    -webkit-text-stroke: deeppink;
+    text-shadow:
+        2px 2px 0 deeppink;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.maincontainer {
+    display: flex;
+
+}
+
+aside {
+    border-right: 5px solid black;
+    padding: 5px;
+    width: 25%;
+}
+
+section {
+    padding: 10px;
+
+}
+
+h1 {
+    -webkit-text-stroke: black;
+    text-shadow:
+        2px 2px 0 black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: deeppink;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+footer h2 {
+    -webkit-text-stroke: deeppink;
+    text-shadow:
+        2px 2px 0 deeppink;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    color: black;
+    background-color: deeppink;
+    font-size: x-large;
+    width: 120px;
+    height: 50px;
+    transform: translate(50%, -200%);
+}
+
+article {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button:hover {
+    background-color: rgb(175, 42, 113);
+    ;
+}
+
+#log {
+    color: black;
+    text-align: center;
+}
+
+#h {
+    font-size: 40px;
+    color: deeppink;
+    font-weight: bold;
+    -webkit-text-stroke: black;
+    text-shadow:
+        2px 2px 0 black;
+}
+
+hr {
+    border: 3px solid black;
+}
+
+.img {
+    box-shadow: none;
+    border: none;
+}
+
+img {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    border: 2px solid deeppink;
+}
+
+img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+}
+
+
+@media screen and (max-width: 468px) {
+    aside {
+        width: 30%; /* Reduce width */
+        padding: 2px;
+        font-size: smaller; /* Reduce text size if needed */
+    }
+
+    aside a {
+        font-size: small; /* Reduce text size */
+        padding: 5px;
+    }
+
+    aside img {
+        width: calc(125px / 3);
+        height: calc(125px / 3);
+    }
+
+    img, aside img{
+        width: calc(250px / 2); /* Shrinks all images */
+        height: calc(250px / 2);
+    }
+    button{
+        transform: translateY(-20%);
+    }
+    footer img{
+        width:50px;
+        height:50px;
+    }
+}
+@media screen and (max-width: 268px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        max-width: 70px;
+        max-height: 250px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}

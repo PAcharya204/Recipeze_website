@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+        * {
+            font-family: 'Dancing Script', cursive;
+            background-color: rgb(240, 189, 189);
+        }
+
+        header {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            max-height: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            max-width: 100vw;
+        }
+
+        nav a {
+            background: transparent;
+            color: deeppink;
+            padding: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        p {
+            font-family: 'Pacifico', cursive;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: deeppink;
+            font-weight: bold;
+            text-align: center;
+            -webkit-text-stroke: black;
+            text-shadow:
+                2px 2px 0 black;
+        }
+
+        #about {
+            color: black;
+        }
+
+        #log {
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        hr {
+            border: 3px solid black;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cook {
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px black;
+            border: 2px solid deeppink;
+        }
+
+        img {
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            border-radius: 10px;
+            border: 2px solid deeppink;
+            box-shadow: 10px 10px 20px black;
+        }
+
+        .img {
+            box-shadow: none;
+            border: none;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        footer p {
+            font-family: 'Pacifico', cursive;
+        }
+
+        h2 {
+            -webkit-text-stroke: deeppink;
+            text-shadow:
+                2px 2px 0 deeppink;
+            color: black;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 268px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                justify-content: left;
+                max-width: 70px;
+                max-height: 250px;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 468px) {
+            img {
+                width: calc(250px / 1);
+                /* Shrinks all images */
+                height: calc(250px / 1);
+            }
+
+            footer img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="img" src="logo1.png" alt="Logo" width="150" height="150">
+        <h1>RECIPEZE</h1>
+        <p id="log">Your Shortcut to Delicious Meals"</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="recipies.html">Recipies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>About us</h1>
+    <div>
+        <img id="cook" src="cook.jpg" alt="Photo" width="550" height="350">
+    </div>
+    <div class="div">
+        <p id="about">Welcome to Recipeze!<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Recipeze, we
+            believe that cooking should be simple, enjoyable, and accessible to everyone—whether you're a seasoned chef
+            or
+            just starting your culinary journey. Our mission is to inspire and empower home cooks with easy-to-follow
+            recipes, creative meal ideas, and expert tips to make every dish a success.
+            Our growing collection of recipes is thoughtfully crafted to cater to all tastes, preferences, and skill
+            levels.
+            From quick weeknight dinners to indulgent desserts and everything in between, you'll find something here to
+            spark your creativity in the kitchen.
+            We also aim to celebrate the joy of food and bring people together through the universal language of
+            cooking. At
+            Recipeze, it’s not just about recipes—it’s about creating memorable meals, sharing moments, and building a
+            love
+            for food that lasts a lifetime.
+            Whether you're looking for inspiration, guidance, or a place to share your own culinary creations, Recipeze
+            is
+            here for you. Let's make cooking easier, one recipe at a time!</p>
+    </div>
+    <hr>
+    <footer>
+        <h2>Contact us</h2>
+        <p>Email:poojithaacharya04@gmail.com</p>
+        <p>Phone no: 1234567890</p>
+        <h2>Follow us:</h2>
+        <p>@recipe_web</p>
+        <p><img src="i.jpg" alt="instagram" width="50" height="50">
+            <img src="f.jpg" alt="facebook" width="50" height="50">
+            <img src="lk.jpg" alt="Linkedin" width="50" height="50">
+        </p>
+    </footer>
+</body>
+
+</html>

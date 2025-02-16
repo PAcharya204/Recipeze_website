@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        body {
+            font-family: 'Dancing Script', cursive;
+        }
+        * {
+            text-align: center;
+            background-color: rgb(240, 189, 189);
+        }
+        .box {
+            text-align: center;
+            background-color:rgb(240, 189, 189);
+            padding: 20px;
+            margin:auto;
+            border: 2px solid deeppink;
+            margin-bottom: 100px;
+            box-shadow: 10px 10px 20px ;
+            border-radius: 50px;
+            max-width: 400px;
+            max-height: auto;
+        }
+
+        h2 {
+            background-color: transparent;
+            color:black;
+            font-family: 'Pacifico', cursive;
+            font-size: x-large;
+        }
+
+       #log
+       {
+            color: black;
+            text-align: center;
+            
+            font-family: 'Pacifico', cursive;
+        }
+
+        img {
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            padding:0px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        h1 {
+        -webkit-text-stroke: black;
+        text-shadow: 
+         2px  2px 0 black;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 300px;
+            color:deeppink;
+        }
+        button:hover
+        {
+            background-color: rgb(175, 42, 113);
+        }
+        button {
+            font-size: large;
+            max-width: auto;
+            max-height: auto;
+            padding: 5px;
+            border:none;
+            box-shadow: 10px 10px 20px black;
+            border-radius:10px;
+            color:black;
+            background-color: deeppink;
+        }
+
+        hr {
+            border: 3px solid black;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo1.png" alt="Logo" width="150" height="150">
+        <h1>RECIPEZE</h1>
+        <p id="log">Your Shortcut to Delicious Meals"</p>
+    </header>
+    <hr>
+    <div class="box">
+        <h2>Hungry for something delicious? Hit ‘Start’ and let’s get cooking!</h2><br>
+        <button type="button" onclick="location.href='home.html'">START-></button>
+    </div>
+</body>
+
+</html>

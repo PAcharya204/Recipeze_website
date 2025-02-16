@@ -84,6 +84,10 @@ img:hover {
     opacity: 0.9;
 }
 
+#l
+{
+    background:transparent;
+}
 #log {
     color: black;
     text-align: center;
